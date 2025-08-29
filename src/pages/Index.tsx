@@ -4,6 +4,7 @@ import { testimonials, stats } from "@/data/mockData";
 import { useState, useEffect } from "react";
 import { ChevronRight, Users, Target, Heart, Star } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { Analytics } from "@vercel/analytics/next"
 
 const Index = () => {
   const [currentTestimonial, setCurrentTestimonial] = useState(0);
@@ -47,7 +48,7 @@ const Index = () => {
             </div>
             <div className="relative">
               <img
-                src="public/Website-Photos/AI-ML-Python-25/0D5A7405.png"
+                src="public/Website-Photos/AI-ML-Python-25/0D5A7405.jpg"
                 alt="Diverse kids collaborating on coding projects in a bright classroom"
                 className="rounded-2xl shadow-strong w-full object-cover"
               />
@@ -184,9 +185,26 @@ const Index = () => {
                 ))}
               </div>
 
-              <blockquote className="text-xl md:text-2xl text-foreground font-medium mb-6 leading-relaxed">
-                "{testimonials[currentTestimonial]?.quote}"
-              </blockquote>
+              {/* Arrows and quote */}
+              <div className="flex items-center justify-center gap-4 mb-6">
+                <button
+                  aria-label="Previous testimonial"
+                  className="p-2 rounded-full bg-muted hover:bg-primary/20 text-primary transition-smooth"
+                  onClick={() => setCurrentTestimonial((prev) => (prev - 1 + testimonials.length) % testimonials.length)}
+                >
+                  <ChevronRight className="w-6 h-6 rotate-180" />
+                </button>
+                <blockquote className="text-xl md:text-2xl text-foreground font-medium leading-relaxed max-w-xl">
+                  "{testimonials[currentTestimonial]?.quote}"
+                </blockquote>
+                <button
+                  aria-label="Next testimonial"
+                  className="p-2 rounded-full bg-muted hover:bg-primary/20 text-primary transition-smooth"
+                  onClick={() => setCurrentTestimonial((prev) => (prev + 1) % testimonials.length)}
+                >
+                  <ChevronRight className="w-6 h-6" />
+                </button>
+              </div>
 
               <div className="flex items-center justify-center gap-4">
                 <div className="w-12 h-12 gradient-hero rounded-full flex items-center justify-center text-white font-heading font-bold">
@@ -227,7 +245,7 @@ const Index = () => {
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="relative">
               <img
-                src={projectShowcaseImage}
+                src="public/Website-Photos/AI-ML-Python-25/0D5A7406.jpg"
                 alt="Kids proudly displaying their completed coding projects on laptop screens"
                 className="rounded-2xl shadow-strong w-full object-cover"
               />

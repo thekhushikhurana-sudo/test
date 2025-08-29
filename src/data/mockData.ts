@@ -214,7 +214,7 @@ export const journeyMilestones: JourneyMilestone[] = [
     title: "The Idea Sparked",
     date: "January 2023",
     description: "Started with a simple question: why can't kids teach other kids to code?",
-    image: "/Website-Photos/Python Summer 24/IMG_2273.png",
+  image: "/Website-Photos/Python Summer 24/IMG_2273.jpg",
     tag: "Foundation"
   },
   {
@@ -222,7 +222,7 @@ export const journeyMilestones: JourneyMilestone[] = [
     title: "First Coding Session",
     date: "March 2023",
     description: "Taught 3 friends Python basics in my bedroom. Everyone actually understood it!",
-    image: "/Website-Photos/Python Middle 24/IMG_6095.png",
+  image: "/Website-Photos/Python Middle 24/IMG_6095.jpg",
     tag: "Teaching"
   },
   {
@@ -230,7 +230,7 @@ export const journeyMilestones: JourneyMilestone[] = [
     title: "Community Center Partnership",
     date: "May 2023",
     description: "Local community center offered us a classroom space for weekend sessions.",
-    image: "/Website-Photos/Python Summer 24/IMG_2411.png",
+  image: "/Website-Photos/Python Summer 24/IMG_2411.jpg",
     tag: "Growth"
   },
   {
@@ -238,7 +238,7 @@ export const journeyMilestones: JourneyMilestone[] = [
     title: "First Official Camp",
     date: "June 2023",
     description: "8 kids signed up for our first 2-week Python camp. Nervous but excited!",
-    image: "/Website-Photos/Python Summer 25/IMG_7757.png",
+  image: "/Website-Photos/Python Summer 25/IMG_7757.jpg",
     tag: "Milestone"
   },
   {
@@ -246,7 +246,7 @@ export const journeyMilestones: JourneyMilestone[] = [
     title: "AI Workshop Launch",
     date: "August 2023",
     description: "Introduced machine learning concepts with image recognition projects.",
-    image: "/Website-Photos/AI-ML-Python-25/IMG_7653.png",
+  image: "/Website-Photos/AI-ML-Python-25/IMG_7653.jpg",
     tag: "Innovation"
   },
   {
@@ -254,7 +254,7 @@ export const journeyMilestones: JourneyMilestone[] = [
     title: "Parent Feedback Form",
     date: "September 2023",
     description: "Started collecting formal feedback. 100% would recommend to other families!",
-    image: "/Website-Photos/Scratch Camp 2023/IMG_4493.png",
+  image: "/Website-Photos/Scratch Camp 2023/IMG_4493.jpg",
     tag: "Quality"
   },
   {
@@ -262,7 +262,7 @@ export const journeyMilestones: JourneyMilestone[] = [
     title: "Library Collaboration",
     date: "October 2023",
     description: "Public library invited us to run monthly coding hours for kids.",
-    image: "/Website-Photos/Python Summer 24/IMG_7280.png",
+  image: "/Website-Photos/Python Summer 24/IMG_7280.jpg",
     tag: "Community"
   },
   {
@@ -270,7 +270,7 @@ export const journeyMilestones: JourneyMilestone[] = [
     title: "First Demo Day",
     date: "November 2023",
     description: "Kids presented their projects to families. So much pride and joy!",
-    image: "/Website-Photos/AI-ML-Python-25/0D5A7402.png",
+  image: "/Website-Photos/AI-ML-Python-25/0D5A7402.jpg",
     tag: "Celebration"
   },
   {
@@ -278,7 +278,7 @@ export const journeyMilestones: JourneyMilestone[] = [
     title: "Virtual Sessions Begin",
     date: "December 2023",
     description: "Launched online classes to reach kids beyond our local area.",
-    image: "/Website-Photos/Python Summer 25/IMG_7905.png",
+  image: "/Website-Photos/Python Summer 25/IMG_7905.jpg",
     tag: "Expansion"
   },
   {
@@ -286,7 +286,7 @@ export const journeyMilestones: JourneyMilestone[] = [
     title: "Student Instructors Join",
     date: "January 2024",
     description: "Three of our best students became peer instructors. Full circle moment!",
-    image: "/Website-Photos/AI-ML-Python-25/IMG_7736.png",
+  image: "/Website-Photos/AI-ML-Python-25/IMG_7736.jpg",
     tag: "Leadership"
   },
   {
@@ -294,7 +294,7 @@ export const journeyMilestones: JourneyMilestone[] = [
     title: "30 Students Milestone",
     date: "February 2024",
     description: "Reached 30 students taught across all our programs. Growing strong!",
-    image: "/Website-Photos/Python Middle 24/IMG_6108.png",
+  image: "/Website-Photos/Python Middle 24/IMG_6108.jpg",
     tag: "Impact"
   },
   {
@@ -302,7 +302,7 @@ export const journeyMilestones: JourneyMilestone[] = [
     title: "Website Launch",
     date: "March 2024",
     description: "Built our own website to share our story and reach even more families.",
-    image: "/Website-Photos/Python Summer 24/IMG_7285.png",
+  image: "/Website-Photos/Python Summer 24/IMG_7285.jpg",
     tag: "Digital"
   }
 ];
