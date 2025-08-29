@@ -21,7 +21,7 @@ export default function Journey() {
           <div className="relative">
             {/* Timeline line */}
             <div className="absolute left-1/2 transform -translate-x-px h-full w-0.5 bg-gradient-to-b from-primary via-primary to-secondary"></div>
-            
+
             {journeyMilestones.map((milestone, index) => (
               <div key={milestone.id} className={`relative flex items-center mb-16 ${
                 index % 2 === 0 ? 'flex-row' : 'flex-row-reverse'
@@ -56,8 +56,16 @@ export default function Journey() {
                   <div className="w-4 h-4 gradient-hero rounded-full border-4 border-background shadow-medium z-10"></div>
                 </div>
 
-                {/* Spacer */}
-                <div className="w-5/12"></div>
+                {/* Milestone Image */}
+                <div className="w-5/12 flex items-center justify-center">
+                  <div className="aspect-[4/3] w-full max-w-xs bg-gradient-to-br from-primary/10 to-secondary/10 rounded-2xl overflow-hidden shadow-soft">
+                    <img
+                      src={milestone.image}
+                      alt={milestone.title}
+                      className="object-cover w-full h-full"
+                    />
+                  </div>
+                </div>
               </div>
             ))}
           </div>
@@ -74,14 +82,14 @@ export default function Journey() {
             We're always growing and looking for new students to join our community of young coders and innovators.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a 
-              href="/courses" 
+            <a
+              href="/courses"
               className="inline-flex items-center justify-center h-12 px-6 py-3 text-base rounded-full font-medium gradient-hero text-white hover:shadow-medium transition-bounce"
             >
               Explore Our Courses
             </a>
-            <a 
-              href="/contact" 
+            <a
+              href="/contact"
               className="inline-flex items-center justify-center h-12 px-6 py-3 text-base rounded-full font-medium border-2 border-primary text-primary bg-background hover:bg-primary hover:text-primary-foreground transition-smooth"
             >
               Get in Touch

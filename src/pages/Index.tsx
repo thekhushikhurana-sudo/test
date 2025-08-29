@@ -8,10 +8,10 @@ import { Button } from "@/components/ui/button";
 const Index = () => {
   const [currentTestimonial, setCurrentTestimonial] = useState(0);
 
-  // Auto-advance testimonials
+  // Auto-advance testimonials (show 10 boxes)
   useEffect(() => {
     const timer = setInterval(() => {
-      setCurrentTestimonial((prev) => (prev + 1) % Math.min(testimonials.length, 3));
+      setCurrentTestimonial((prev) => (prev + 1) % Math.min(testimonials.length, 10));
     }, 4000);
     return () => clearInterval(timer);
   }, []);
@@ -24,13 +24,13 @@ const Index = () => {
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
               <h1 className="text-5xl md:text-7xl font-heading font-bold text-foreground mb-6 leading-tight">
-                For Kids, By Kids: 
+                For Kids, By Kids:
                 <span className="gradient-hero bg-clip-text text-transparent block">
                   Learn, Build, Lead
                 </span>
               </h1>
               <p className="text-xl text-muted-foreground mb-8 leading-relaxed">
-                Hands-on coding and AI programs created and taught by students for students. 
+                Hands-on coding and AI programs created and taught by students for students.
                 Join our peer-led community where learning is fun, approachable, and totally gets you.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
@@ -46,13 +46,13 @@ const Index = () => {
               </div>
             </div>
             <div className="relative">
-              <img 
-                src={heroImage} 
+              <img
+                src="public/Website-Photos/AI-ML-Python-25/0D5A7405.png"
                 alt="Diverse kids collaborating on coding projects in a bright classroom"
                 className="rounded-2xl shadow-strong w-full object-cover"
               />
               <div className="absolute -bottom-4 -left-4 bg-card shadow-medium rounded-xl p-4">
-                <div className="text-2xl font-heading font-bold text-primary">30+</div>
+                <div className="text-2xl font-heading font-bold text-primary">120+</div>
                 <div className="text-sm text-muted-foreground">Happy Students</div>
               </div>
               <div className="absolute -top-4 -right-4 bg-card shadow-medium rounded-xl p-4">
@@ -73,7 +73,7 @@ const Index = () => {
                 Our Mission
               </h2>
               <p className="text-xl text-muted-foreground mb-8 leading-relaxed">
-                We create welcoming, peer-led tech learning so every kid can build something real—today. 
+                We create welcoming, peer-led tech learning so every kid can build something real—today.
                 No boring lectures, no intimidating jargon. Just students teaching students in the way that actually works.
               </p>
             </div>
@@ -123,7 +123,7 @@ const Index = () => {
               </div>
               <h3 className="text-xl font-heading font-bold text-foreground mb-4">Beginner-Friendly</h3>
               <p className="text-muted-foreground leading-relaxed">
-                Never coded before? Perfect! We start from absolute zero and build up step by step. 
+                Never coded before? Perfect! We start from absolute zero and build up step by step.
                 Our peer instructors remember being beginners too.
               </p>
             </div>
@@ -133,7 +133,7 @@ const Index = () => {
               </div>
               <h3 className="text-xl font-heading font-bold text-foreground mb-4">Real Projects</h3>
               <p className="text-muted-foreground leading-relaxed">
-                Build actual games, calculators, and AI models. No boring textbook exercises. 
+                Build actual games, calculators, and AI models. No boring textbook exercises.
                 Everything you create is something you'd want to show off.
               </p>
             </div>
@@ -143,7 +143,7 @@ const Index = () => {
               </div>
               <h3 className="text-xl font-heading font-bold text-foreground mb-4">Supportive Mentors</h3>
               <p className="text-muted-foreground leading-relaxed">
-                Learn from teenage instructors who speak your language and get your struggles. 
+                Learn from teenage instructors who speak your language and get your struggles.
                 It's like having a cool older sibling teach you to code.
               </p>
             </div>
@@ -175,7 +175,7 @@ const Index = () => {
           <h2 className="text-3xl font-heading font-bold text-foreground text-center mb-12">
             What Families Are Saying
           </h2>
-          
+
           <div className="max-w-4xl mx-auto">
             <div className="bg-card shadow-medium rounded-2xl p-8 md:p-12 text-center">
               <div className="flex items-center justify-center mb-6">
@@ -183,11 +183,11 @@ const Index = () => {
                   <Star key={i} className="w-6 h-6 text-secondary fill-current" />
                 ))}
               </div>
-              
+
               <blockquote className="text-xl md:text-2xl text-foreground font-medium mb-6 leading-relaxed">
                 "{testimonials[currentTestimonial]?.quote}"
               </blockquote>
-              
+
               <div className="flex items-center justify-center gap-4">
                 <div className="w-12 h-12 gradient-hero rounded-full flex items-center justify-center text-white font-heading font-bold">
                   {testimonials[currentTestimonial]?.name?.charAt(0)}
@@ -203,15 +203,15 @@ const Index = () => {
               </div>
             </div>
 
-            {/* Dots indicator */}
+            {/* Dots indicator for 10 testimonials */}
             <div className="flex items-center justify-center gap-2 mt-8">
-              {testimonials.slice(0, 3).map((_, index) => (
+              {testimonials.slice(0, 10).map((_, index) => (
                 <button
                   key={index}
                   onClick={() => setCurrentTestimonial(index)}
                   className={`w-3 h-3 rounded-full transition-smooth ${
-                    index === currentTestimonial 
-                      ? 'bg-primary' 
+                    index === currentTestimonial
+                      ? 'bg-primary'
                       : 'bg-muted hover:bg-primary/50'
                   }`}
                 />
@@ -226,8 +226,8 @@ const Index = () => {
         <div className="container mx-auto">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="relative">
-              <img 
-                src={projectShowcaseImage} 
+              <img
+                src={projectShowcaseImage}
                 alt="Kids proudly displaying their completed coding projects on laptop screens"
                 className="rounded-2xl shadow-strong w-full object-cover"
               />
@@ -237,7 +237,7 @@ const Index = () => {
                 Built by students, for students
               </h2>
               <p className="text-xl text-muted-foreground mb-8 leading-relaxed">
-                Every line of code in our curriculum was written by a student who learned it the hard way. 
+                Every line of code in our curriculum was written by a student who learned it the hard way.
                 We know which explanations actually make sense because we've been exactly where you are.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
@@ -260,7 +260,7 @@ const Index = () => {
             Ready to start building?
           </h2>
           <p className="text-xl text-muted-foreground mb-8 max-w-3xl mx-auto leading-relaxed">
-            Join our community of young coders and discover what you can create when learning is led by people who actually get it. 
+            Join our community of young coders and discover what you can create when learning is led by people who actually get it.
             Your first project is just one click away.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">

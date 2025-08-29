@@ -13,7 +13,7 @@ export default function Courses() {
         {/* Course Detail Header */}
         <section className="py-16 px-4 bg-muted">
           <div className="container mx-auto">
-            <button 
+            <button
               onClick={() => setSelectedCourse(null)}
               className="mb-6 text-primary hover:text-primary/80 font-medium"
             >
@@ -53,7 +53,7 @@ export default function Courses() {
                 <p className="text-muted-foreground mb-6">
                   Join {course.title} and start building amazing projects with peer instructors who get it.
                 </p>
-                <a 
+                <a
                   href="/contact"
                   className="inline-flex items-center justify-center w-full h-12 px-6 py-3 text-base rounded-full font-medium gradient-hero text-white hover:shadow-medium transition-bounce"
                 >
@@ -151,14 +151,14 @@ export default function Courses() {
                     </span>
                     <span className="text-sm text-muted-foreground">{course.ageRange}</span>
                   </div>
-                  
+
                   <h3 className="text-xl font-heading font-bold text-foreground mb-2">
                     {course.title}
                   </h3>
                   <p className="text-muted-foreground mb-4 line-clamp-2">
                     {course.shortBlurb}
                   </p>
-                  
+
                   <div className="flex items-center justify-between text-sm text-muted-foreground mb-4">
                     <span className="flex items-center gap-1">
                       <Clock className="w-4 h-4" />
@@ -168,7 +168,7 @@ export default function Courses() {
                       <span className="font-medium text-primary">{course.price}</span>
                     )}
                   </div>
-                  
+
                   <button
                     onClick={() => setSelectedCourse(course.id)}
                     className="w-full h-12 px-6 py-3 text-base rounded-full font-medium bg-primary text-primary-foreground hover:bg-primary/90 transition-smooth"
@@ -183,39 +183,6 @@ export default function Courses() {
       </section>
 
       {/* Parent Info FAQ */}
-      <section className="py-16 px-4 bg-muted">
-        <div className="container mx-auto max-w-3xl">
-          <h2 className="text-3xl font-heading font-bold text-foreground text-center mb-12">
-            Parent Information
-          </h2>
-          <div className="space-y-6">
-            <div className="bg-card shadow-soft rounded-xl p-6">
-              <h3 className="font-heading font-semibold text-lg text-foreground mb-3">
-                How are classes structured?
-              </h3>
-              <p className="text-muted-foreground">
-                Our classes are small (6-8 students max) and taught by trained teenage instructors with adult supervision. We focus on hands-on projects rather than lectures, so kids build real things while learning concepts.
-              </p>
-            </div>
-            <div className="bg-card shadow-soft rounded-xl p-6">
-              <h3 className="font-heading font-semibold text-lg text-foreground mb-3">
-                What if my child has never coded before?
-              </h3>
-              <p className="text-muted-foreground">
-                Perfect! Our beginner courses assume zero experience. Peer instructors are especially good at remembering what it's like to be new to coding, so they explain things in ways that really click.
-              </p>
-            </div>
-            <div className="bg-card shadow-soft rounded-xl p-6">
-              <h3 className="font-heading font-semibold text-lg text-foreground mb-3">
-                Are there scholarships available?
-              </h3>
-              <p className="text-muted-foreground">
-                Yes! We believe every kid should have access to coding education. Contact us to discuss scholarship options - we work with families to make our programs accessible.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
 
       {/* CTA */}
       <section className="py-16 px-4">
@@ -226,7 +193,7 @@ export default function Courses() {
           <p className="text-lg text-muted-foreground mb-8 max-w-2xl mx-auto">
             Join our community of young coders and start building amazing projects with peer instructors who make learning fun.
           </p>
-          <a 
+          <a
             href="/contact"
             className="inline-flex items-center justify-center h-12 px-6 py-3 text-base rounded-full font-medium gradient-hero text-white hover:shadow-medium transition-bounce"
           >

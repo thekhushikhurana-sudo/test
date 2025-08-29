@@ -51,8 +51,39 @@ export interface GalleryItem {
 
 export const courses: Course[] = [
   {
+    id: "scratch-beginners",
+    title: "Introduction to Scratch",
+    shortBlurb: "Start coding with Scratch! Make animations, games, and stories with drag-and-drop blocks.",
+    ageRange: "Ages 8-12",
+    skillLevel: "Beginner",
+    topic: "Other",
+    duration: "6 × 1-hour sessions",
+    format: "In-person & Virtual",
+    nextStartDate: "May 1, 2024",
+    price: "Free",
+    thumbnail: "/api/placeholder/400/300",
+    syllabus: [
+      "Introduction to Scratch and block coding",
+      "Creating your first animation",
+      "Making interactive stories",
+      "Building simple games",
+      "Using sounds and effects",
+      "Showcase: Present your project"
+    ],
+    projects: [
+      "Animated greeting card",
+      "Choose-your-own-adventure story",
+      "Simple platformer game"
+    ],
+    requirements: [
+      "Laptop or tablet",
+      "Scratch account (free)",
+      "Curiosity and creativity!"
+    ]
+  },
+  {
     id: "python-fundamentals",
-    title: "Python Fundamentals",
+    title: "Introduction to Python",
     shortBlurb: "Build games, calculators, and charts while learning coding basics from peer instructors.",
     ageRange: "Ages 11-15",
     skillLevel: "Beginner",
@@ -60,7 +91,7 @@ export const courses: Course[] = [
     duration: "8 × 90-min sessions",
     format: "In-person & Virtual",
     nextStartDate: "March 15, 2024",
-    price: "$240",
+    price: "Free",
     thumbnail: "/api/placeholder/400/300",
     syllabus: [
       "Python basics and syntax",
@@ -95,7 +126,7 @@ export const courses: Course[] = [
     duration: "6 × 2-hour sessions",
     format: "In-person preferred",
     nextStartDate: "April 1, 2024",
-    price: "$320",
+    price: "Free",
     thumbnail: "/api/placeholder/400/300",
     syllabus: [
       "What is AI and Machine Learning?",
@@ -123,32 +154,56 @@ export const courses: Course[] = [
 export const testimonials: Testimonial[] = [
   {
     id: "1",
-    quote: "My child couldn't stop coding after class! The peer instructors made it so approachable and fun.",
-    name: "Sarah M.",
-    role: "Parent"
+    quote: "I would say my experience at the camp was really fun and fulfilling. I learned a lot!",
+    name: "Student",
+    role: "Student"
   },
   {
     id: "2",
-    quote: "I finally understand loops and functions. Having older kids teach me made all the difference!",
-    name: "Alex K.",
+    quote: "I liked that we were able to make games and played kahoots.",
+    name: "Student",
     role: "Student"
   },
   {
     id: "3",
-    quote: "The projects were amazing - I built a game I can actually show my friends. So proud!",
-    name: "Maya R.",
+    quote: "I loved how every lesson was so engaging. We were able to apply everything we learned.",
+    name: "Student",
     role: "Student"
   },
   {
     id: "4",
-    quote: "Such a welcoming environment. My shy daughter came out of her shell and loves programming now.",
-    name: "David L.",
-    role: "Parent"
+    quote: "It was a ton of fun and I learned a lot. It got me interested in technology.",
+    name: "Student",
+    role: "Student"
   },
   {
     id: "5",
-    quote: "Learning AI from teenagers who actually get it was incredible. They explained everything so clearly.",
-    name: "Jordan P.",
+    quote: "The camp was a great learning experience, but also really fun at the same time!!",
+    name: "Student",
+    role: "Student"
+  },
+  {
+    id: "6",
+    quote: "The camp was so inspiring!",
+    name: "Student",
+    role: "Student"
+  },
+  {
+    id: "7",
+    quote: "I loved the fact that we were really hands-on, making projects!",
+    name: "Student",
+    role: "Student"
+  },
+  {
+    id: "8",
+    quote: "The Blooket and Kahoot review games were so much fun!!",
+    name: "Student",
+    role: "Student"
+  },
+  {
+    id: "9",
+    quote: "The Blookets and Kahoots made the class fun and helped me remember everything!",
+    name: "Student",
     role: "Student"
   }
 ];
@@ -159,7 +214,7 @@ export const journeyMilestones: JourneyMilestone[] = [
     title: "The Idea Sparked",
     date: "January 2023",
     description: "Started with a simple question: why can't kids teach other kids to code?",
-    image: "/api/placeholder/400/300",
+    image: "/Website-Photos/Python Summer 24/IMG_2273.png",
     tag: "Foundation"
   },
   {
@@ -167,7 +222,7 @@ export const journeyMilestones: JourneyMilestone[] = [
     title: "First Coding Session",
     date: "March 2023",
     description: "Taught 3 friends Python basics in my bedroom. Everyone actually understood it!",
-    image: "/api/placeholder/400/300",
+    image: "/Website-Photos/Python Middle 24/IMG_6095.png",
     tag: "Teaching"
   },
   {
@@ -175,7 +230,7 @@ export const journeyMilestones: JourneyMilestone[] = [
     title: "Community Center Partnership",
     date: "May 2023",
     description: "Local community center offered us a classroom space for weekend sessions.",
-    image: "/api/placeholder/400/300",
+    image: "/Website-Photos/Python Summer 24/IMG_2411.png",
     tag: "Growth"
   },
   {
@@ -183,7 +238,7 @@ export const journeyMilestones: JourneyMilestone[] = [
     title: "First Official Camp",
     date: "June 2023",
     description: "8 kids signed up for our first 2-week Python camp. Nervous but excited!",
-    image: "/api/placeholder/400/300",
+    image: "/Website-Photos/Python Summer 25/IMG_7757.png",
     tag: "Milestone"
   },
   {
@@ -191,7 +246,7 @@ export const journeyMilestones: JourneyMilestone[] = [
     title: "AI Workshop Launch",
     date: "August 2023",
     description: "Introduced machine learning concepts with image recognition projects.",
-    image: "/api/placeholder/400/300",
+    image: "/Website-Photos/AI-ML-Python-25/IMG_7653.png",
     tag: "Innovation"
   },
   {
@@ -199,7 +254,7 @@ export const journeyMilestones: JourneyMilestone[] = [
     title: "Parent Feedback Form",
     date: "September 2023",
     description: "Started collecting formal feedback. 100% would recommend to other families!",
-    image: "/api/placeholder/400/300",
+    image: "/Website-Photos/Scratch Camp 2023/IMG_4493.png",
     tag: "Quality"
   },
   {
@@ -207,7 +262,7 @@ export const journeyMilestones: JourneyMilestone[] = [
     title: "Library Collaboration",
     date: "October 2023",
     description: "Public library invited us to run monthly coding hours for kids.",
-    image: "/api/placeholder/400/300",
+    image: "/Website-Photos/Python Summer 24/IMG_7280.png",
     tag: "Community"
   },
   {
@@ -215,7 +270,7 @@ export const journeyMilestones: JourneyMilestone[] = [
     title: "First Demo Day",
     date: "November 2023",
     description: "Kids presented their projects to families. So much pride and joy!",
-    image: "/api/placeholder/400/300",
+    image: "/Website-Photos/AI-ML-Python-25/0D5A7402.png",
     tag: "Celebration"
   },
   {
@@ -223,7 +278,7 @@ export const journeyMilestones: JourneyMilestone[] = [
     title: "Virtual Sessions Begin",
     date: "December 2023",
     description: "Launched online classes to reach kids beyond our local area.",
-    image: "/api/placeholder/400/300",
+    image: "/Website-Photos/Python Summer 25/IMG_7905.png",
     tag: "Expansion"
   },
   {
@@ -231,7 +286,7 @@ export const journeyMilestones: JourneyMilestone[] = [
     title: "Student Instructors Join",
     date: "January 2024",
     description: "Three of our best students became peer instructors. Full circle moment!",
-    image: "/api/placeholder/400/300",
+    image: "/Website-Photos/AI-ML-Python-25/IMG_7736.png",
     tag: "Leadership"
   },
   {
@@ -239,7 +294,7 @@ export const journeyMilestones: JourneyMilestone[] = [
     title: "30 Students Milestone",
     date: "February 2024",
     description: "Reached 30 students taught across all our programs. Growing strong!",
-    image: "/api/placeholder/400/300",
+    image: "/Website-Photos/Python Middle 24/IMG_6108.png",
     tag: "Impact"
   },
   {
@@ -247,7 +302,7 @@ export const journeyMilestones: JourneyMilestone[] = [
     title: "Website Launch",
     date: "March 2024",
     description: "Built our own website to share our story and reach even more families.",
-    image: "/api/placeholder/400/300",
+    image: "/Website-Photos/Python Summer 24/IMG_7285.png",
     tag: "Digital"
   }
 ];
@@ -255,12 +310,12 @@ export const journeyMilestones: JourneyMilestone[] = [
 export const stats: Stat[] = [
   {
     label: "Students Reached",
-    value: "30+",
+    value: "120+",
     description: "Amazing kids who've joined our coding journey"
   },
   {
     label: "Sessions Run",
-    value: "8",
+    value: "5",
     description: "Camps and workshops completed successfully"
   },
   {
@@ -270,7 +325,7 @@ export const stats: Stat[] = [
   },
   {
     label: "Projects Completed",
-    value: "60+",
+    value: "500+",
     description: "Games, apps, and AI models built by students"
   }
 ];
@@ -278,7 +333,7 @@ export const stats: Stat[] = [
 export const galleryItems: GalleryItem[] = [
   {
     id: "1",
-    image: "/api/placeholder/600/400",
+    image: "/Website-Photos/Python Summer 24/IMG_2272.png",
     caption: "Students working on their first Python projects during summer camp",
     category: "Camps",
     date: "June 2023",
@@ -286,7 +341,7 @@ export const galleryItems: GalleryItem[] = [
   },
   {
     id: "2",
-    image: "/api/placeholder/600/400",
+    image: "/Website-Photos/AI-ML-Python-25/0D5A7402.png",
     caption: "Demo Day presentations - kids showing off their games",
     category: "Events",
     date: "November 2023",
@@ -294,28 +349,28 @@ export const galleryItems: GalleryItem[] = [
   },
   {
     id: "3",
-    image: "/api/placeholder/600/400",
+    image: "/Website-Photos/AI-ML-Python-25/IMG_7652.png",
     caption: "AI workshop - training image classifiers",
     category: "Camps",
     date: "August 2023"
   },
   {
     id: "4",
-    image: "/api/placeholder/600/400",
+    image: "/Website-Photos/Python Middle 24/IMG_6092.png",
     caption: "Calculator app built by 12-year-old Maya",
     category: "Projects",
     date: "July 2023"
   },
   {
     id: "5",
-    image: "/api/placeholder/600/400",
+    image: "/Website-Photos/Scratch Camp 2023/IMG_4492.png",
     caption: "Rock-Paper-Scissors tournament with student-built games",
     category: "Events",
     date: "September 2023"
   },
   {
     id: "6",
-    image: "/api/placeholder/600/400",
+    image: "/Website-Photos/Python Summer 25/0D5A8856.png",
     caption: "Data visualization projects showing local weather patterns",
     category: "Projects",
     date: "October 2023"

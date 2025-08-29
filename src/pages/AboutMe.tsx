@@ -62,13 +62,13 @@ export default function AboutMe() {
                 We're a group of teenage coders who believe the best way to learn is from peers who "get it." Our mission is simple: make STEM learning fun, approachable, and led by students who remember what it's like to be beginners.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
-                <a 
+                <a
                   href="/courses"
                   className="inline-flex items-center justify-center h-12 px-6 py-3 text-base rounded-full font-medium gradient-hero text-white hover:shadow-medium transition-bounce"
                 >
                   See Our Courses
                 </a>
-                <a 
+                <a
                   href="/contact"
                   className="inline-flex items-center justify-center h-12 px-6 py-3 text-base rounded-full font-medium border-2 border-primary text-primary bg-background hover:bg-primary hover:text-primary-foreground transition-smooth"
                 >
@@ -77,13 +77,13 @@ export default function AboutMe() {
               </div>
             </div>
             <div className="relative">
-              <img 
-                src={peerTeachingImage} 
+              <img
+                src={peerTeachingImage}
                 alt="Teenage instructor teaching younger students in a bright classroom setting"
                 className="rounded-2xl shadow-strong w-full object-cover"
               />
               <div className="absolute -bottom-6 -right-6 bg-card shadow-medium rounded-xl p-4">
-                <div className="text-2xl font-heading font-bold text-primary">30+</div>
+                <div className="text-2xl font-heading font-bold text-primary">120+</div>
                 <div className="text-sm text-muted-foreground">Students taught</div>
               </div>
             </div>
@@ -117,32 +117,32 @@ export default function AboutMe() {
           <h2 className="text-3xl font-heading font-bold text-foreground text-center mb-12">
             Meet Our Instructors
           </h2>
-          
+
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {instructors.map((instructor, index) => (
               <div key={index} className="bg-card shadow-soft rounded-2xl p-6 hover:shadow-medium transition-smooth">
                 <div className="w-16 h-16 gradient-hero rounded-full flex items-center justify-center text-white font-heading font-bold text-xl mb-4">
                   {instructor.name.split(' ').map(n => n[0]).join('')}
                 </div>
-                
+
                 <h3 className="text-xl font-heading font-bold text-foreground mb-1">
                   {instructor.name}
                 </h3>
                 <p className="text-primary font-medium mb-3">{instructor.role}</p>
-                
+
                 <div className="bg-accent/50 rounded-lg p-3 mb-4">
                   <p className="text-sm text-accent-foreground">
                     <span className="font-medium">Fun fact:</span> {instructor.funFact}
                   </p>
                 </div>
-                
+
                 <p className="text-muted-foreground text-sm mb-4 leading-relaxed">
                   {instructor.bio}
                 </p>
-                
+
                 <div className="flex flex-wrap gap-2">
                   {instructor.skills.map((skill, skillIndex) => (
-                    <span 
+                    <span
                       key={skillIndex}
                       className="px-3 py-1 bg-primary/10 text-primary text-xs rounded-full font-medium"
                     >
@@ -162,7 +162,7 @@ export default function AboutMe() {
           <h2 className="text-3xl font-heading font-bold text-foreground text-center mb-12">
             What We Believe
           </h2>
-          
+
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {values.map((value, index) => (
               <div key={index} className="bg-card shadow-soft rounded-xl p-6 hover:shadow-medium transition-smooth">
@@ -211,13 +211,13 @@ export default function AboutMe() {
             Join our community of young coders and experience the difference peer-led learning makes. Every student deserves to feel confident in tech.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a 
+            <a
               href="/courses"
               className="inline-flex items-center justify-center h-12 px-6 py-3 text-base rounded-full font-medium gradient-hero text-white hover:shadow-medium transition-bounce"
             >
               View Our Courses
             </a>
-            <a 
+            <a
               href="/journey"
               className="inline-flex items-center justify-center h-12 px-6 py-3 text-base rounded-full font-medium border-2 border-primary text-primary bg-background hover:bg-primary hover:text-primary-foreground transition-smooth"
             >
