@@ -27,7 +27,7 @@ const Index = () => {
               <h1 className="text-5xl md:text-7xl font-heading font-bold text-foreground mb-6 leading-tight">
                 For Kids, By Kids:
                 <span className="gradient-hero bg-clip-text text-transparent block">
-                  Learn, Build, Lead!!!
+                  Learn, Build, Lead
                 </span>
               </h1>
               <p className="text-xl text-muted-foreground mb-8 leading-relaxed">
@@ -48,7 +48,7 @@ const Index = () => {
             </div>
             <div className="relative">
               <img
-                src="public/Website-Photos/AI-ML-Python-25/0D5A7405.jpg"
+                src="Website-Photos/AI-ML-Python-25/0D5A7405.jpg"
                 alt="Diverse kids collaborating on coding projects in a bright classroom"
                 className="rounded-2xl shadow-strong w-full object-cover"
               />
@@ -245,7 +245,7 @@ const Index = () => {
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="relative">
               <img
-                src="public/Website-Photos/AI-ML-Python-25/0D5A7406.jpg"
+                src="Website-Photos/AI-ML-Python-25/0D5A7406.jpg"
                 alt="Kids proudly displaying their completed coding projects on laptop screens"
                 className="rounded-2xl shadow-strong w-full object-cover"
               />
