@@ -27,7 +27,7 @@ const Index = () => {
               <h1 className="text-5xl md:text-7xl font-heading font-bold text-foreground mb-6 leading-tight">
                 For Kids, By Kids:
                 <span className="gradient-hero bg-clip-text text-transparent block">
-                  Learn, Build, Lead
+                  Learn, Build, Lead!!!
                 </span>
               </h1>
               <p className="text-xl text-muted-foreground mb-8 leading-relaxed">
