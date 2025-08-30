@@ -9,7 +9,7 @@ import Journey from "./pages/Journey";
 import Courses from "./pages/Courses";
 import PhotoGallery from "./pages/PhotoGallery";
 import StatsTestimonials from "./pages/StatsTestimonials";
-import AboutMe from "./pages/AboutMe";
+import AboutMe from "./pages/AboutUs";
 import Contact from "./pages/Contact";
 import NotFound from "./pages/NotFound";
 

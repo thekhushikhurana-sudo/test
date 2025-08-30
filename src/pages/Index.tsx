@@ -5,6 +5,7 @@ import { useState, useEffect } from "react";
 import { ChevronRight, Users, Target, Heart, Star } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Analytics } from "@vercel/analytics/next"
+import AboutUs from "./AboutUs";
 
 const Index = () => {
   const [currentTestimonial, setCurrentTestimonial] = useState(0);
@@ -48,17 +49,21 @@ const Index = () => {
             </div>
             <div className="relative">
               <img
-                src="Website-Photos/AI-ML-Python-25/0D5A7405.jpg"
+                src="public/Website-Photos/AI-ML-Python-2a5/0D5A7405.jpg"
                 alt="Diverse kids collaborating on coding projects in a bright classroom"
                 className="rounded-2xl shadow-strong w-full object-cover"
               />
               <div className="absolute -bottom-4 -left-4 bg-card shadow-medium rounded-xl p-4">
                 <div className="text-2xl font-heading font-bold text-primary">120+</div>
-                <div className="text-sm text-muted-foreground">Happy Students</div>
+                <div className="text-sm text-muted-foreground">Students Reached</div>
               </div>
-              <div className="absolute -top-4 -right-4 bg-card shadow-medium rounded-xl p-4">
+              <div className="absolute -top--20 -right-4 bg-card shadow-medium rounded-xl p-4">
                 <div className="text-2xl font-heading font-bold text-secondary">4.9★</div>
-                <div className="text-sm text-muted-foreground">Parent Rating</div>
+                <div className="text-sm text-muted-foreground">Student Rating</div>
+              </div>
+              <div className="absolute -top-36 -right-3.5 bg-card shadow-medium rounded-xl p-4">
+                <div className="text-2xl font-heading font-bold text-secondary">64</div>
+                <div className="text-sm text-muted-foreground">Sessions Held</div>
               </div>
             </div>
           </div>
@@ -74,8 +79,11 @@ const Index = () => {
                 Our Mission
               </h2>
               <p className="text-xl text-muted-foreground mb-8 leading-relaxed">
-                We create welcoming, peer-led tech learning so every kid can build something real—today.
-                No boring lectures, no intimidating jargon. Just students teaching students in the way that actually works.
+                Our camps are built <i>for kids, by kids</i>—a space where learning feels natural, fun, and real. 
+                We teach through games, projects, and collaboration, not boring lectures or intimidating jargon. 
+                Each student gets to build something meaningful to them while learning side by side with peers 
+                who make the process welcoming and engaging. The camps embody the spirit of students teaching 
+                students in a way that actually works. 
               </p>
             </div>
             <div className="grid gap-6">
@@ -174,7 +182,7 @@ const Index = () => {
       <section className="py-20 px-4">
         <div className="container mx-auto">
           <h2 className="text-3xl font-heading font-bold text-foreground text-center mb-12">
-            What Families Are Saying
+            What Students Are Saying
           </h2>
 
           <div className="max-w-4xl mx-auto">
@@ -245,7 +253,7 @@ const Index = () => {
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="relative">
               <img
-                src="Website-Photos/AI-ML-Python-25/0D5A7406.jpg"
+                src="public/Website-Photos/AI-ML-Python-2a5/0D5A7405.jpg"
                 alt="Kids proudly displaying their completed coding projects on laptop screens"
                 className="rounded-2xl shadow-strong w-full object-cover"
               />

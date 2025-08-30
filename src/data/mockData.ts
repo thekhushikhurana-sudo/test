@@ -54,12 +54,12 @@ export const courses: Course[] = [
     id: "scratch-beginners",
     title: "Introduction to Scratch",
     shortBlurb: "Start coding with Scratch! Make animations, games, and stories with drag-and-drop blocks.",
-    ageRange: "Ages 8-12",
+    ageRange: "Ages 7-14",
     skillLevel: "Beginner",
     topic: "Other",
-    duration: "6 × 1-hour sessions",
-    format: "In-person & Virtual",
-    nextStartDate: "May 1, 2024",
+    duration: "8 × 90-minute sessions",
+    format: "In-person",
+    nextStartDate: "Not Currently Scheduled",
     price: "Free",
     thumbnail: "/api/placeholder/400/300",
     syllabus: [
@@ -85,12 +85,12 @@ export const courses: Course[] = [
     id: "python-fundamentals",
     title: "Introduction to Python",
     shortBlurb: "Build games, calculators, and charts while learning coding basics from peer instructors.",
-    ageRange: "Ages 11-15",
+    ageRange: "Ages 10-15",
     skillLevel: "Beginner",
     topic: "Python",
     duration: "8 × 90-min sessions",
-    format: "In-person & Virtual",
-    nextStartDate: "March 15, 2024",
+    format: "In-person",
+    nextStartDate: "Not Currently Scheduled",
     price: "Free",
     thumbnail: "/api/placeholder/400/300",
     syllabus: [
@@ -104,15 +104,13 @@ export const courses: Course[] = [
       "Final project presentation"
     ],
     projects: [
-      "Calculator app",
       "Rock-Paper-Scissors game",
       "Data visualization charts",
-      "Interactive quiz game"
+      "Personal final project",
+      "And so much more!"
     ],
     requirements: [
-      "Laptop or computer",
-      "Python 3.x installed",
-      "Web browser",
+      "Computer",
       "Enthusiasm to learn!"
     ]
   },
@@ -120,12 +118,12 @@ export const courses: Course[] = [
     id: "intro-ai-ml",
     title: "Intro to AI & Machine Learning",
     shortBlurb: "Train image classifiers, understand AI bias, and present your own ML project.",
-    ageRange: "Ages 13-16",
+    ageRange: "Ages 10-16",
     skillLevel: "Intermediate",
     topic: "AI/ML",
-    duration: "6 × 2-hour sessions",
+    duration: "8 × 90-minute sessions",
     format: "In-person preferred",
-    nextStartDate: "April 1, 2024",
+    nextStartDate: "September 2025",
     price: "Free",
     thumbnail: "/api/placeholder/400/300",
     syllabus: [
@@ -133,6 +131,8 @@ export const courses: Course[] = [
       "Training your first model",
       "Image recognition basics",
       "Understanding bias in AI",
+      "Supervised vs unsupervised learning",
+      "Evaluating model performance",
       "Ethics in artificial intelligence",
       "Project planning and execution"
     ],
@@ -143,10 +143,8 @@ export const courses: Course[] = [
       "Personal ML project"
     ],
     requirements: [
-      "Completed Python Fundamentals or equivalent",
-      "Laptop with 8GB+ RAM",
-      "Google account for Colab",
-      "Camera or phone for image collection"
+      "Computer",
+      "Enthusiasm to learn!"
     ]
   }
 ];
@@ -211,99 +209,99 @@ export const testimonials: Testimonial[] = [
 export const journeyMilestones: JourneyMilestone[] = [
   {
     id: "1",
-    title: "The Idea Sparked",
-    date: "January 2023",
-    description: "Started with a simple question: why can't kids teach other kids to code?",
+    title: "AI/ML Camp In Middle School 🦾",
+    date: "Fall 2025",
+    description: "We decided to take a new iteration of our AI/ML camp to the same middle school where we had surveyed the students in 2023. Coming soon!",
   image: "/Website-Photos/Python Summer 24/IMG_2273.jpg",
-    tag: "Foundation"
+    tag: "Camps"
   },
   {
     id: "2",
-    title: "First Coding Session",
-    date: "March 2023",
-    description: "Taught 3 friends Python basics in my bedroom. Everyone actually understood it!",
+    title: "Tech Interest Survey Pt. 2 📈",
+    date: "Fall 2025",
+    description: "Conducted a second survey at the same middle school to measure impact and interest in tech education. Results coming soon!",
   image: "/Website-Photos/Python Middle 24/IMG_6095.jpg",
-    tag: "Teaching"
+    tag: "Research"
   },
   {
     id: "3",
-    title: "Community Center Partnership",
-    date: "May 2023",
-    description: "Local community center offered us a classroom space for weekend sessions.",
+    title: "For Kids, By Kids on TED Stage 🎤",
+    date: "Summer 2025",
+    description: "Our founder presented a TEDx talk on peer teaching in coding education. Chosen out of 225 applicants, youngest speaker ever at TEDxJeffersonU!",
   image: "/Website-Photos/Python Summer 24/IMG_2411.jpg",
-    tag: "Growth"
+    tag: "National Stage!"
   },
   {
     id: "4",
-    title: "First Official Camp",
-    date: "June 2023",
-    description: "8 kids signed up for our first 2-week Python camp. Nervous but excited!",
+    title: "Python Summer Camp Pt. 2 ⚡️",
+    date: "Summer 2025",
+    description: "Ran a second summer Python camp, this time with 24 kids and had an amazing time!",
   image: "/Website-Photos/Python Summer 25/IMG_7757.jpg",
-    tag: "Milestone"
+    tag: "Camps"
   },
   {
     id: "5",
-    title: "AI Workshop Launch",
-    date: "August 2023",
-    description: "Introduced machine learning concepts with image recognition projects.",
+    title: "AI/ML/Python Camp 🤖",
+    date: "Summer 2025",
+    description: "Introduced a new camp, Fundamentals of AI, ML, and Python. Kids loved it! 40+ signups!",
   image: "/Website-Photos/AI-ML-Python-25/IMG_7653.jpg",
     tag: "Innovation"
   },
   {
     id: "6",
-    title: "Parent Feedback Form",
-    date: "September 2023",
-    description: "Started collecting formal feedback. 100% would recommend to other families!",
-  image: "/Website-Photos/Scratch Camp 2023/IMG_4493.jpg",
-    tag: "Quality"
+    title: "CS Education Conference Debut 🎓",
+    date: "Spring 2025",
+    description: "Continued on with the research and presented a lightning talk at the largest CS education conference in the US, SIGCSE 2025. Made waves!",
+    image: "/5.jpeg",
+    tag: "Presentation"
   },
   {
     id: "7",
-    title: "Library Collaboration",
-    date: "October 2023",
-    description: "Public library invited us to run monthly coding hours for kids.",
-  image: "/Website-Photos/Python Summer 24/IMG_7280.jpg",
-    tag: "Community"
-  },
-  {
-    id: "8",
-    title: "First Demo Day",
-    date: "November 2023",
-    description: "Kids presented their projects to families. So much pride and joy!",
-  image: "/Website-Photos/AI-ML-Python-25/0D5A7402.jpg",
-    tag: "Celebration"
-  },
-  {
-    id: "9",
-    title: "Virtual Sessions Begin",
-    date: "December 2023",
-    description: "Launched online classes to reach kids beyond our local area.",
-  image: "/Website-Photos/Python Summer 25/IMG_7905.jpg",
-    tag: "Expansion"
-  },
-  {
-    id: "10",
-    title: "Student Instructors Join",
-    date: "January 2024",
-    description: "Three of our best students became peer instructors. Full circle moment!",
-  image: "/Website-Photos/AI-ML-Python-25/IMG_7736.jpg",
-    tag: "Leadership"
-  },
-  {
-    id: "11",
-    title: "30 Students Milestone",
-    date: "February 2024",
-    description: "Reached 30 students taught across all our programs. Growing strong!",
-  image: "/Website-Photos/Python Middle 24/IMG_6108.jpg",
+    title: "Python in Middle School 📚",
+    date: "Fall 2024",
+    description: "We wanted to spread the joy of coding, so we decided to take our next camp to the same school where we had surveyed the students in the year prior. It was a smashing success!",
+  image: "/4.jpeg",
     tag: "Impact"
   },
   {
+    id: "8",
+    title: "Python Summer Camp 🐍",
+    date: "Summer 2024",
+    description: "In 2024, we expanded from a basement to a full summer camp in a library with 20+ kids! The students learned to create projects, game, and presented to the class!",
+  image: "/3.jpeg",
+    tag: "New location: Library!"
+  },
+  {
+    id: "9",
+    title: "First Research Spotlight 🏆",
+    date: "Spring 2024",
+    description: "We compiled all the data we had collected and created a research project on peer teaching in coding education. It then recieved awards at major local and regional science fairs!",
+  image: "/Website-Photos/Python Summer 25/IMG_7905.jpg",
+    tag: "First Exposure"
+  },
+  {
+    id: "10",
+    title: "Tech Interest Survey 📊",
+    date: "Fall 2023",
+    description: "Realizing that the Scratch camp had been a success, we surveyed 430 local, public middle schoolers to understand their interests and needs in tech education.",
+  image: "/Website-Photos/AI-ML-Python-25/IMG_7736.jpg",
+    tag: "Surveying the Community"
+  },
+  {
+    id: "11",
+    title: "First Camp: Scratch! 🎊",
+    date: "Summer 2023",
+    description: "The first camp was a hit! It began in a basement and grew to 20+ kids. The students built games, worked together, and had a blast!",
+  image: "2.jpeg",
+    tag: "Beginning"
+  },
+  {
     id: "12",
-    title: "Website Launch",
-    date: "March 2024",
-    description: "Built our own website to share our story and reach even more families.",
-  image: "/Website-Photos/Python Summer 24/IMG_7285.jpg",
-    tag: "Digital"
+    title: "Inspiration Strikes 💥",
+    date: "Spring 2023",
+    description: "Our founder attended a girls-only STEM conference and got inspired to start her own program. She realized that girls needed a different way of learning coding, one that connected with them. Since she couldn't find one online, she decided to create it!",
+  image: "/1.jpeg",
+    tag: "Our Start"
   }
 ];
 
@@ -315,7 +313,7 @@ export const stats: Stat[] = [
   },
   {
     label: "Sessions Run",
-    value: "5",
+    value: "64",
     description: "Camps and workshops completed successfully"
   },
   {
